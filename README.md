@@ -96,7 +96,7 @@ python main.py
 
 Here’s a preview of the app GUI:
 
-![App Screenshot](Screenshot 2025-07-08 233331.png)
+![App Screenshot](sc1.png)
 
 
 ---
