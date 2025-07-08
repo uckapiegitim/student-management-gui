@@ -93,10 +93,6 @@ python main.py
 
 ---
 
-## 📸 Screenshots *(Optional)*
-
-![Screenshot 2025-07-08 233331](https://github.com/user-attachments/assets/57ecdf2c-9a91-4e0a-b6c7-f528c37ce1da)
-
 ---
 
 ## 🙋‍♂️ Author
