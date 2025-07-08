@@ -2,7 +2,7 @@
 
 This is a full stack desktop application built using **Python (Tkinter GUI)** and **MySQL**, allowing users to manage student records with a simple and clean interface.
 
-> Built by **Mohan Sarma (S)** as part of a full stack learning journey 💻🔥
+> Built by **Mohan Sarma** as part of a full stack learning journey 💻🔥
 
 ---
 
@@ -22,33 +22,39 @@ This is a full stack desktop application built using **Python (Tkinter GUI)** an
 - **Frontend (GUI):** Python Tkinter
 - **Backend Logic:** Python Functions
 - **Database:** MySQL (with `mysql-connector-python`)
-- **Tooling:** VS Code + GitHub
+- **Tooling:** VS Code 
 
 ---
 
 ## 📁 Folder Structure
-Student-Management-System/
-│
-├── main.py # Main GUI + CRUD logic
-├── db_config.py # MySQL database connection
-├── README.md # Project guide
-└── studentdb (MySQL DB) # Table: studentsdata (id, name, age, marks)
 
+```
+Student-Management-System/
+├── main.py          # Main GUI + CRUD logic
+├── db_config.py     # MySQL database connection
+├── README.md        # Project guide
+└── studentdb        # MySQL DB with table: studentsdata (id, name, age, marks)
+```
 
 ---
 
 ## ⚙️ How to Run the App
 
-### 1. Install MySQL Connector (if not already):
+### ✅ 1. Install MySQL Connector
+
 ```bash
 pip install mysql-connector-python
+```
 
-### 2. Create the Database & Table:
-Log in to your MySQL terminal and run:
+---
 
-sql
-Copy code
+### ✅ 2. Create the Database & Table
+
+Log in to your MySQL terminal or MySQL Workbench and run:
+
+```sql
 CREATE DATABASE studentdb;
+
 USE studentdb;
 
 CREATE TABLE studentsdata (
@@ -57,9 +63,13 @@ CREATE TABLE studentsdata (
     age INT,
     marks FLOAT
 );
-### 3. Update Database Credentials (in db_config.py):
-python
-Copy code:
+```
+
+---
+
+### ✅ 3. Update DB Credentials in `db_config.py`
+
+```python
 def get_connection():
     return mysql.connector.connect(
         host="localhost",
@@ -67,9 +77,38 @@ def get_connection():
         password="your_mysql_password",
         database="studentdb"
     )
+```
 
-### 4. Run the App:
+🧠 Replace `your_mysql_password` with your actual password
+
+---
+
+### ✅ 4. Run the App
+
 ```bash
-
 python main.py
+```
 
+✅ A desktop GUI will open — allowing you to manage student records easily.
+
+---
+
+## 📸 Screenshots *(Optional)*
+
+![Screenshot 2025-07-08 233331](https://github.com/user-attachments/assets/57ecdf2c-9a91-4e0a-b6c7-f528c37ce1da)
+
+---
+
+## 🙋‍♂️ Author
+
+**Mohan Sarma**  
+👨‍💻 [GitHub](https://github.com/smohansarma)  
+🔗 [LinkedIn](https://www.linkedin.com/in/mohan-sarma-s-b36752252)
+
+---
+
+## ⭐ Like this project?
+
+- Star the repo on GitHub 🌟
+- Share with other learners
+- Add it to your resume and job applications!
